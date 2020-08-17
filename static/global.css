@@ -1,0 +1,134 @@
+:root {
+	/* --border: none; */
+	/* --border: 1px solid #000000; */
+	/* --border: 1px solid #FFFFFF; */
+	--border: 1px solid transparent;
+	--transition: 1s all;
+	--filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+
+html {
+	overflow: hidden;
+
+	color: white;
+	font-family: 'Poor Story';
+}
+
+html,
+body,
+#sapper {
+	width: 100%;
+	height: 100%;
+
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+	color: white;
+}
+
+::-webkit-scrollbar {
+	width: 0.5vw;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #babac0;
+
+	border-radius: 0.25vw;
+}
+
+::-webkit-scrollbar-track {
+
+}
+
+.grid-container {
+	width: 100%;
+	height: 100%;
+
+	display: grid;
+
+	justify-items: center;
+	align-items: center;
+
+	border: var(--border);
+}
+
+.grid-item {
+	width: 100%;
+	height: 100%;
+
+	border: var(--border);
+}
+
+.flex-row-container {
+	width: auto;
+	height: auto;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	/* align-content: center; */
+
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-justify-content: space-around;
+	/* -webkit-align-content: center; */
+
+	display: -moz-flex;
+	-moz-flex-direction: row;
+	-moz-justify-content: space-around;
+	/* -moz-align-content: center; */
+
+	display: -ms-flex;
+	-ms-flex-direction: row;
+	-ms-justify-content: space-around;
+	/* -ms-align-content: center; */
+
+	display: -o-flex;
+	-o-flex-direction: row;
+	-o-justify-content: space-around;
+	/* -o-align-content: center; */
+
+	border: var(--border);
+}
+
+.flex-column-container {
+	width: auto;
+	height: auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	/* align-content: center; */
+
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	-webkit-justify-content: space-around;
+	/* -webkit-align-content: center; */
+
+	display: -moz-flex;
+	-moz-flex-direction: column;
+	-moz-justify-content: space-around;
+	/* -moz-align-content: center; */
+
+	display: -ms-flex;
+	-ms-flex-direction: column;
+	-ms-justify-content: space-around;
+	/* -ms-align-content: center; */
+
+	display: -o-flex;
+	-o-flex-direction: column;
+	-o-justify-content: space-around;
+	/* -o-align-content: center; */
+
+	border: var(--border);
+}
