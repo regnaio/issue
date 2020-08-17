@@ -22,6 +22,9 @@ export class Skybox {
     // const ray = new BABYLON.Ray(new BABYLON.Vector3(), new BABYLON.Vector3(1, 0, 0), 1);
     // ray.intersectsMesh(mesh, false);
 
+    // This line compiles fine unlike the line above
+    // ray.intersectsMesh(mesh as BABYLON.DeepImmutableObject<BABYLON.Mesh>, false);
+
     this._scene.registerBeforeRender(() => {
       this._camera.alpha = BABYLON.Scalar.Lerp(this._camera.alpha, this._camera.alpha - 1e-2, 1e-2);
     });
