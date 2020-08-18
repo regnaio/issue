@@ -18,9 +18,9 @@ export class Skybox {
     skybox.material = skyboxMaterial;
 
     // Uncomment 3 lines below to view TypeScript compile error 
-    // const mesh = BABYLON.MeshBuilder.CreateBox('mesh', { size: 1 }, this._scene);
-    // const ray = new BABYLON.Ray(new BABYLON.Vector3(), new BABYLON.Vector3(1, 0, 0), 1);
-    // ray.intersectsMesh(mesh, false);
+    const mesh = BABYLON.MeshBuilder.CreateBox('mesh', { size: 1 }, this._scene);
+    const ray = new BABYLON.Ray(new BABYLON.Vector3(), new BABYLON.Vector3(1, 0, 0), 1);
+    ray.intersectsMesh(mesh, false);
 
     // This line compiles fine unlike the line above
     // ray.intersectsMesh(mesh as BABYLON.DeepImmutableObject<BABYLON.Mesh>, false);
